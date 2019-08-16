@@ -1,1 +1,6 @@
-<span class='test'>{{course.title}}</span>
+{{yield}}
+<div class="course-title">{{unbound model.title}}</div>
+<div class="course-summary">{{unbound model.summary}}</div>
+<div>
+  <img class="course-image" src={{unbound model.image-info.square2x.url}} alt="image">
+</div>
