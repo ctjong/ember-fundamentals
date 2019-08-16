@@ -12,7 +12,6 @@ const App = Application.extend({
   Resolver
 });
 
-
 loadInitializers(App, config.modulePrefix);
 
 // Maintain compatibility w/ ember 1.13 -> 3.7.1 and beyond
