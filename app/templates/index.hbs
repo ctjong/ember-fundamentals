@@ -1,11 +1,11 @@
 <h1 class="course-title">Index</h1>
 
 <ul>
-  <li>
-    {{#each model as |course|}}
-      {{course-list-item model=course}}
-    {{/each}}
-  </li>
+  {{#each model as |course|}}
+    <li style="list-style-type: none">
+        {{course-list-item model=course}}
+    </li>
+  {{/each}}
 </ul>
 
 {{outlet}}
