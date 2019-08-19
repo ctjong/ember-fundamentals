@@ -1,8 +1,11 @@
 {{yield}}
+
 <div style="display:flex;flex-direction:row;">
   <img class="course-image" src={{unbound model.image-info.square2x.url}} alt="image">
   <div>
-    <div class="course-title">{{unbound model.title}}</div>
+    {{#link-to "course" model.title}}
+      <div class="course-title">{{unbound model.title}}</div>
+    {{/link-to}}
     <div class="course-summary">{{unbound model.summary}}</div>
   </div>
 </div>
