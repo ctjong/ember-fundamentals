@@ -6,6 +6,6 @@
     {{#link-to "course" model.title}}
       <div class="course-title">{{unbound model.title}}</div>
     {{/link-to}}
-    <div class="course-summary">{{unbound model.summary}}</div>
+    <div class="course-summary">{{unbound (truncate model.summary)}}</div>
   </div>
 </div>
